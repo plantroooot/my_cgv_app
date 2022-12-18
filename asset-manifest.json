@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my_cgv_app/static/css/main.23f82583.css",
+    "main.js": "/my_cgv_app/static/js/main.0d11cc3c.js",
+    "static/js/787.13ea2e5f.chunk.js": "/my_cgv_app/static/js/787.13ea2e5f.chunk.js",
+    "static/media/ico_speaker.svg": "/my_cgv_app/static/media/ico_speaker.5e4c602ec38992305959.svg",
+    "static/media/ico_theater.svg": "/my_cgv_app/static/media/ico_theater.0cc755f650a0e88443d2.svg",
+    "static/media/ico_movie.svg": "/my_cgv_app/static/media/ico_movie.2cf7c6fa16531fc5eeb7.svg",
+    "static/media/ico_discount.svg": "/my_cgv_app/static/media/ico_discount.a2e26255ddfddbb27257.svg",
+    "static/media/ico_popcorn.svg": "/my_cgv_app/static/media/ico_popcorn.081f648213be06a1d200.svg",
+    "static/media/ico_ticket.svg": "/my_cgv_app/static/media/ico_ticket.0edbe265e225933272b9.svg",
+    "index.html": "/my_cgv_app/index.html",
+    "static/media/ico_search.svg": "/my_cgv_app/static/media/ico_search.aac9a0c953a0a51c8fe7.svg",
+    "static/media/ico_fw_w.svg": "/my_cgv_app/static/media/ico_fw_w.e31d95058b22ffa02896.svg",
+    "main.23f82583.css.map": "/my_cgv_app/static/css/main.23f82583.css.map",
+    "main.0d11cc3c.js.map": "/my_cgv_app/static/js/main.0d11cc3c.js.map",
+    "787.13ea2e5f.chunk.js.map": "/my_cgv_app/static/js/787.13ea2e5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23f82583.css",
+    "static/js/main.0d11cc3c.js"
+  ]
+}
