@@ -1,4 +1,37 @@
-.App {
+@charset "utf-8";
+
+
+.wrapper{
+  background: #000;
+  min-height: 1500px;
+}
+
+.sBtn{display: block; width: 100px; height: 30px; line-height: 28px; padding: 0 18px; box-sizing: border-box; font-size: 1.4rem; font-family: pretendard, sans-serif; font-weight: 400; border: 1px solid #fff; border-radius: 15px; background-image: url('/public/image/ico_fw_w.svg'); background-repeat: no-repeat; background-size: 7px 12px; background-position: right 18px top 50%;}
+
+#main{padding: 0 0 130px; box-sizing: border-box;}
+/* #main .section1 .inner{height:100vh;} */
+
+#main .section .title-area{display: flex; align-items: center; justify-content: space-between;}
+#main .section .title-area .tit-box ul{margin-left: -18px; display: inline-flex;}
+#main .section .title-area .tit-box ul li a{padding:0 18px; position: relative;}
+#main .section .title-area .tit-box ul li a::before{content: ''; display: block; clear: both; width: 1px; height: 14px; position: absolute; left: 0; top: 50%; margin-top: -7px; background-color: rgba(255, 255, 255, 0.4);}
+#main .section .title-area .tit-box ul li:first-child a::before{display: none;}
+#main .section .title-area .tit-box h3{height: 42px; line-height: 42px; font-size: 2.6rem; font-weight: 600;}
+
+#main .section1 .inner{position: relative;}
+#main .section1 .video-wrap::before{content: ''; display: block; clear: both; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 2; background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.25) 75%, #000 100%)}
+#main .section1 .movie-info{position: absolute; left: 8%; top: 50%; z-index:5; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+/* #main .section1 .video-wrap:hover .movie-info{opacity: 1;} */
+#main .section1 .movie-info strong{display:block; font-size: 5.5rem; font-weight: 700; letter-spacing:-0.5px; line-height: 1; text-shadow: 2px 2px 4px rgb(0 0 0 / 72%);}
+#main .section1 .movie-info p{margin-top: 20px; font-size: 2.4rem; font-weight: 600; line-height: 1.4; overflow: hidden;}
+#main .section1 .movie-info .control-box{margin-top: 20px; display: flex; flex-direction: row; font-size:0;}
+#main .section1 .movie-info button{display: block; margin-left:10px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #fff; background-color: transparent; background-size: 18px;}
+#main .section1 .movie-info .btn-play{background-image: url('/public/image/ico_pause.png');}
+#main .section1 .movie-info .btn-play.on{background-image: url('/public/image/ico_play.png');}
+#main .section1 .movie-info .btn-sound{background-image: url('/public/image/ico_sound_off.png');}
+#main .section1 .movie-info .btn-sound.on{background-image: url('/public/image/ico_sound_on.png');}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +68,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

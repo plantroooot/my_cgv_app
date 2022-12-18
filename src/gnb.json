@@ -1,0 +1,168 @@
+[
+    {
+        "name" : "영화",
+        "image" : "",
+        "link" : "",
+        "refer1" : "",
+        "refer2" : "",
+        "linkMenu" : "link-movie",
+        "depth2" : [
+            {
+                "name" : "무비차트",
+                "link" : "",
+                "refer1" : ""
+            }
+            
+        ]
+    },
+    {
+        "name" : "극장",
+        "image" : "",
+        "link" : "",
+        "refer1" : "",
+        "refer2" : "",
+        "linkMenu" : "link-theater",
+        "depth2" : [
+            {
+                "name" : "CGV 극장",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "특별관",
+                "link" : "",
+                "refer1" : ""
+            }
+            
+        ]
+    },
+    {
+        "name" : "예매",
+        "image" : "",
+        "link" : "",
+        "refer1" : "",
+        "refer2" : "",
+        "linkMenu" : "link-reservation",
+        "depth2" : [
+            {
+                "name" : "빠른예매",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "상영스케줄",
+                "link" : "",
+                "refer1" : ""
+            }
+            
+        ]
+    },
+    {
+        "name" : "스토어",
+        "image" : "",
+        "link" : "",
+        "refer1" : "",
+        "refer2" : "",
+        "linkMenu" : "link-store",
+        "depth2" : [
+            {
+                "name" : "영화관람권",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "기프트카드",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "콤보, 팝콘, 음료, 스낵",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "플레이존",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "씨네샵",
+                "link" : "",
+                "refer1" : ""
+            }
+            
+        ]
+    },
+    {
+        "name" : "이벤트",
+        "image" : "",
+        "link" : "",
+        "refer1" : "",
+        "refer2" : "",
+        "linkMenu" : "link-promotion",
+        "depth2" : [
+            {
+                "name" : "SPECIAL",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "영화/예매",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "멤버십/클럽",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "CGV극장별",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "제휴할인",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "당첨자 발표",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "종료된 이벤트",
+                "link" : "",
+                "refer1" : ""
+            }
+            
+        ]
+    },
+    {
+        "name" : "혜택",
+        "image" : "",
+        "link" : "",
+        "refer1" : "",
+        "refer2" : "",
+        "linkMenu" : "link-discount",
+        "depth2" : [
+            {
+                "name" : "CGV 할인정보",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "CLUB 서비스",
+                "link" : "",
+                "refer1" : ""
+            },
+            {
+                "name" : "VIP 라운지",
+                "link" : "",
+                "refer1" : ""
+            }
+            
+        ]
+    }
+]
