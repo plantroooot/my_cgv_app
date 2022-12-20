@@ -40,7 +40,7 @@ code {
 #header, #footer {width:100%;}
 .size {width:100%; max-width:100%; height:auto; padding: 0 75px; box-sizing: border-box;}
 .inner  {width:100%; box-sizing:border-box; }
-.wrapper {width:100%; max-width:1920px; padding-left:246px; box-sizing:border-box; position:relative; overflow:hidden; margin:0 auto; min-height:1000px;}
+.wrapper {width:100%; padding-left:246px; box-sizing:border-box; position:relative; overflow:hidden; margin:0 auto; min-height:1000px; background-color: #000;}
 .cgv-grd{background: -webkit-linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87)); background: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));}
 
 

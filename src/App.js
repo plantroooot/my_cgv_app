@@ -1,13 +1,10 @@
 import './App.css';
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import { Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import Main from './pages/Main.js'
 import gnb from './gnb.json'
-
-
-
 
 
 function App() {
@@ -24,8 +21,6 @@ function App() {
           
           <Routes>
             <Route path="/" element={<Main></Main>}></Route>
-
-
 
             {/* ----------------------------------------------------------------- */}
             <Route path="*" element={<div>존재하지 않는 페이지입니다.</div>}></Route>
