@@ -50,7 +50,7 @@ code {
 #header{position:fixed; left:0; top:0; z-index:300; width:245px; height:100%; border-right:1px solid rgba(255, 255, 255, 0.1);}
 #header .inner{height:100%;}
 #header .logo-box{font-size:0; padding: 0 25px; box-sizing: border-box;}
-#header .logo-box a{display: inline-block; margin-left: -20px; padding :0 20px; box-sizing: border-box; width:148px; height:85px; text-indent:-9999px; background-image: url('./../public/image/logo_w.png'); background-repeat: no-repeat; background-size: 53%; background-position: 20px 40%;}
+#header .logo-box a{display: inline-block; margin-left: -20px; padding :0 20px; box-sizing: border-box; width:148px; height:85px; text-indent:-9999px; background-image: url('./../public/image/static/logo_w.png'); background-repeat: no-repeat; background-size: 53%; background-position: 20px 40%;}
 #header .header-cont{height: calc(100% - 73px); padding: 0 25px; box-sizing: border-box; overflow-y: auto;}
 #header .top .login-box{padding: 11px 0; box-sizing: border-box; border-top: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.1)}
 #header .top .login-box a{display: block; display:flex;}
@@ -60,7 +60,7 @@ code {
 #header .top .search-box{margin-top:20px;}
 #header .top .search-box .input-box{position:relative;}
 #header .top .search-box input[type="text"]{display: block; height: 40px; line-height: 40px; padding-left: 44px; padding-right: 36px; box-sizing: border-box; font-size: 1.7rem; font-weight: 700; color: #fff; background-color: #1a1a1a; border: 0; border-radius: 4px; carset-color: #ff0050;}
-#header .top .search-box .search-btn{display: block; width: 20px; height: 20px; position:absolute; left:13px; top:50%; margin-top: -10px; background-image :url('./../public/image/ico_search.svg'); background-size: 20px 20px; opacity:0.4;}
+#header .top .search-box .search-btn{display: block; width: 20px; height: 20px; position:absolute; left:13px; top:50%; margin-top: -10px; background-image :url('./../public/image/static/ico_search.svg'); background-size: 20px 20px; opacity:0.4;}
 /* #header .top .search-box input[type="text"]:focus{} */
 
 #header .mid .gnb{padding: 25px 0; box-sizing: border-box;}
@@ -70,12 +70,12 @@ code {
 #header .mid .gnb .depth1 > li > a:hover{opacity: 1;}
 #header .mid .gnb .depth1 > li > a span{display: inline-block; vertical-align: middle;}
 #header .mid .gnb .link-menu::before{content: ''; display: inline-block; clear: both; vertical-align: middle; width: 20px; height: 20px; margin-right: 9px; background-repeat: no-repeat; background-position: 50% 50%;}
-#header .mid .gnb .link-movie::before{margin-top: -4px; background-image: url('./../public/image/ico_movie.svg');}
-#header .mid .gnb .link-theater::before{background-image: url('./../public/image/ico_theater.svg');}
-#header .mid .gnb .link-reservation::before{background-image: url('./../public/image/ico_ticket.svg');}
-#header .mid .gnb .link-store::before{background-image: url('./../public/image/ico_popcorn.svg');}
-#header .mid .gnb .link-promotion::before{background-image: url('./../public/image/ico_speaker.svg');}
-#header .mid .gnb .link-discount::before{background-image: url('./../public/image/ico_discount.svg');}
+#header .mid .gnb .link-movie::before{margin-top: -4px; background-image: url('./../public/image/static/ico_movie.svg');}
+#header .mid .gnb .link-theater::before{background-image: url('./../public/image/static/ico_theater.svg');}
+#header .mid .gnb .link-reservation::before{background-image: url('./../public/image/static/ico_ticket.svg');}
+#header .mid .gnb .link-store::before{background-image: url('./../public/image/static/ico_popcorn.svg');}
+#header .mid .gnb .link-promotion::before{background-image: url('./../public/image/static/ico_speaker.svg');}
+#header .mid .gnb .link-discount::before{background-image: url('./../public/image/static/ico_discount.svg');}
 #header .mid .gnb .depth2{display:none;}
 #header .mid .current-event{padding: 25px 0; box-sizing: border-box; border-top: 1px solid rgba(255, 255, 255, 0.1);}
 #header .mid .event-title h5{font-size: 1.6rem; font-weight: 300; color: rgba(255, 255, 255, 0.8);}

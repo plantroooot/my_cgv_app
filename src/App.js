@@ -47,8 +47,8 @@ function Header({state}){
             <div className="login-box">
               <Link to="/login">
                 <div className="avarta">
-                  <div className="imgs back-img" style={{ backgroundImage : `url(${ !state.loginCheck ? '/image/blank_avatar.png' : state.userInfo.avatar})` }}>
-                    <img src="/image/blank_avatar.png" alt="기본 이미지" className="basic-img" />
+                  <div className="imgs back-img" style={{ backgroundImage : `url(${ !state.loginCheck ? '/image/static/blank_avatar.png' : state.userInfo.avatar})` }}>
+                    <img src="/image/static/blank_avatar.png" alt="기본 이미지" className="basic-img" />
                   </div>
                 </div>
                 <div className="txt-box">
@@ -93,12 +93,12 @@ function Header({state}){
               </ul>
             </div>
             <div className="current-event">
-              <Link to={state.event[0].eventLink}>
-                <div className="event-img back-img" style={{ backgroundImage : `url(${state.event[0].eventImage})` }}>
-                  <img src={state.event[0].eventImage} alt="현대카드 이벤트" className="basic-img" />
+              <Link to={state.event[0].link}>
+                <div className="event-img back-img" style={{ backgroundImage : `url(${state.event[0].image})` }}>
+                  <img src={state.event[0].image} alt="현대카드 이벤트" className="basic-img" />
                 </div>
                 <div className="event-title">
-                  <h5>{state.event[0].eventTitle}</h5>
+                  <h5>{state.event[0].title}</h5>
                 </div>
               </Link>
             </div>
