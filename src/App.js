@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import Main from './pages/Main.js'
 import gnb from './gnb.json'
+import info from './info.json'
 
 
 function App() {
@@ -21,10 +22,13 @@ function App() {
           
           <Routes>
             <Route path="/" element={<Main></Main>}></Route>
+            {/* <Route path="movies" element={<MovieList></MovieList>}></Route> */}
 
             {/* ----------------------------------------------------------------- */}
             <Route path="*" element={<div>존재하지 않는 페이지입니다.</div>}></Route>
           </Routes>
+
+          <Footer></Footer>
         </div>
       </div>
     </div>
@@ -106,7 +110,7 @@ function Header({state}){
           <div className="btm">
             <ul>
               <li>
-                <a href="http://corp.cgv.co.kr/company/cgv/default.aspx" target="_blank">CGV 소개</a>
+                <a href="http://corp.cgv.co.kr/company/cgv/default.aspx" target="_blank"  rel="noreferrer">CGV 소개</a>
               </li>
               <li>
                 <Link to="/">기프트샵</Link>
@@ -131,9 +135,70 @@ function Header({state}){
 }
 
 function Footer(){
+  let state = useSelector((state) => { return state.ftads });
+  let ftsitemap = info;
   return(
-    <footer>
-      <div>Footer</div>
+    <footer id="footer">
+      <div className="ad-area">
+        <div className="inner">              
+            <div className="img-box">
+              <a href="aa" target="_blank" rel="noreferrer">
+                <div className="imgs back-img" style={{ backgroundImage : `url(${state.image})` }}>
+                  <img src={state.image} alt={state.title} className="basic-img" />
+                </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="info-area">
+        <div className="size">
+          <div className="inner">
+            <div className="sitemap">
+              <ul>
+                {
+                  ftsitemap.map((val, i)=>{
+                    return(                      
+                    <li key={i}>
+                      <a href={val.link} rel="noreferrer" target="_blank">
+                        {
+                          i == 6 ? <strong>{val.name}</strong> : val.name
+                        }
+                        </a>
+                    </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
+            <div className="ft-info">
+              <div className="info">
+                <p className="clear">
+                  <span><em>주소</em>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</span>
+                </p>
+              </div>
+              <div className="info">
+                <p className="clear">
+                  <span><em>대표이사</em>허민회</span>
+                  <span><em>사업자등록번호</em>104-81-45690</span>
+                  <span><em>통신판매업신고번호</em>2017-서울용산-0662</span>
+                </p>
+              </div>
+              <div className="info">
+                <p className="clear">
+                  <span><em>호스팅사업자</em>CJ올리브네트웍스</span>
+                  <span><em>개인정보보호책임자</em>심준범</span>
+                  <span><em>대표이메일</em>cjcgvmaster@cj.net</span>
+                </p>
+              </div>
+              <div className="info">
+                <p className="clear">
+                  <span><em>© CJ CGV. All Rights Reserved</em></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   )
 }

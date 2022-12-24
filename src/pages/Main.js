@@ -69,7 +69,8 @@ function Main(){
             </div>
             <Section2></Section2>
             <Section3></Section3>
-            <Section4></Section4>          
+            <Section4></Section4>      
+            <Section5></Section5>    
             {/* <div className="section section">
                 <div className="size">
                     <div className="inner">
@@ -93,9 +94,7 @@ function Title({title, type}){
     let dispatch = useDispatch();
     let [titleOn, setTitleOn] = useState(0);
     let state = useSelector((state) => { return state.movies });
-    let movieDataArray = movieData;    
-    //
-
+    let movieDataArray = movieData;
     return(
         <div className="title-area">
             {   
@@ -114,7 +113,7 @@ function Title({title, type}){
                 </div>
             }
             <div className="more-btn">
-                <Link to="" className="sBtn">전체보기</Link>
+                <Link to="">전체보기</Link>
             </div>
         </div>
     )
@@ -129,8 +128,9 @@ function SlideForm({type}){
         dispatch(sortMovieChart());        
     },[]);
 
+    //무비차트, 상영예정작
     if(type === "section2"){
-       return(        
+       return(     
         <Swiper
             spaceBetween={25}
             slidesPerView={5}
@@ -139,7 +139,9 @@ function SlideForm({type}){
             navigation={true}
             >
             {
-                state.movies.map((val, i)=>{
+                state.movies.length < 0 ? <SwiperSlide>등록된 게시물이 없습니다.</SwiperSlide> 
+
+                : state.movies.map((val, i)=>{
                     return (
                     i < 10 ? //메인 노출 개수
                         <SwiperSlide key={i}>
@@ -175,6 +177,8 @@ function SlideForm({type}){
         </Swiper>
        ) 
     }
+
+    //이벤트
     if(type === "section3"){
         return (
             <Swiper
@@ -273,7 +277,7 @@ function Section3(){
 
 function Section4(){
     let [theaters, setTheaters] = useState(0);
-    let state = useSelector((state) => state.theater )
+    let state = useSelector((state) => state.theater );
     return (
         <div className="section section4">
             <div className="size">
@@ -293,7 +297,7 @@ function Section4(){
                                     {
                                         state.map((val, i)=>{
                                             return(
-                                                val.isMain == true ?
+                                                val.isMain == true ? //메인 노출여부
                                                 <li key={i} className={theaters == i ? 'active' : ''}>
                                                     <Link to="/" onMouseEnter={()=>{ setTheaters(i) }}>
                                                         <div className="box">
@@ -315,5 +319,32 @@ function Section4(){
     )
 }
 
+function Section5(){
+
+    return(
+        <div className="section section5">
+            <div className="size">
+                <div className="inner">
+                    <div className="cont-area">
+                        <div className="app-area clear">
+                            <div className="txt-area">
+                                <span>VISION &amp; MISSION</span>
+                                <strong>지금 CGV앱을 경험해보세요!</strong>
+                            </div>
+                            <div className="btn-area">
+                                <a href="https://play.google.com/store/apps/details?id=com.cgv.android.movieapp&hl=ko&gl=US" className="app-store" target="_blank" rel="noreferrer">
+                                    <img src="/image/static/ico_appstore.svg" alt="IOS 앱 다운" />
+                                </a>
+                                <a href="https://apps.apple.com/kr/app/cgv/id370441190?l=en" className="google-play" target="_blank" rel="noreferrer">
+                                    <img src="/image/static/ico_googleplay.svg" alt="GOOGLE PLAY 앱 다운" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export default Main

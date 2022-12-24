@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.sBtn{display: block; width: 100px; height: 30px; line-height: 28px; padding: 0 18px; box-sizing: border-box; font-size: 1.4rem; font-family: pretendard, sans-serif; font-weight: 400; border: 1px solid #fff; border-radius: 15px; background-image: url('/public/image/static/ico_fw_w.svg'); background-repeat: no-repeat; background-size: 7px 12px; background-position: right 18px top 50%;}
+.more-btn a{display: block; width: 100px; height: 30px; line-height: 28px; padding: 0 18px; box-sizing: border-box; font-size: 1.4rem; font-family: pretendard, sans-serif; font-weight: 400; border: 1px solid #fff; border-radius: 15px; background-image: url('/public/image/static/ico_fw_w.svg'); background-repeat: no-repeat; background-size: 7px 12px; background-position: right 18px top 50%;}
 
 
 /* main */
@@ -17,6 +17,7 @@
 #main .section .title-area .tit-box2 h3:first-child a::before{display: none;}
 #main .section .title-area .tit-box2 a{color: rgba(255, 255, 255, 0.8);}
 #main .section .title-area .tit-box2 a.on{color: #fff;}
+#main .section .title-area .tit-box3 h3{font-size: 2.4rem;}
 #main .section .cont-area{margin-top: 30px;}
 #main .section .slide-area .box > a{display:block;}
 #main .section .slide-area .swiper-button-prev, #main .section .slide-area .swiper-button-next{width: 60px; height:60px; position: absolute; top: calc(50% - 2px); z-index: 5; background-repeat: no-repeat; background-color: rgba(255, 255, 255, 0.7); background-position: 50% 50%; border-radius: 50%; cursor: pointer; box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);}
@@ -78,41 +79,24 @@
 #main .section4 .theater-area .right ul li .box em{display: block; font-size: 2.2rem; font-weight: 600; letter-spacing:-0.5px;}
 #main .section4 .theater-area .right ul li.active .box{border: 1px solid #fff; border-radius: 16px;}
 #main .section4 .theater-area .right ul li.active + li .box{border-top: 1px solid transparent;}
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* #main .section5 .more-btn a{width: 80px; background-image: none; text-align: center;}
+#main .section5 .prd-case{display: flex;}
+#main .section5 .prd-box{width: calc(33.3333% - 40px); width: -webkit-calc(33.3333 - 40px); margin-left: 40px; flex-grow: 1;}
+#main .section5 .prd-box:first-child{margin-left:0;}
+#main .section5 .prd-list ul li a{display: block;}
+#main .section5 .prd-list .prd-info{display: flex; align-items: center;}
+#main .section5 .prd-list .prd-info .imgs{width:75px; height:76px;} */
+#main .section5 .cont-area{margin-top: 0;}
+#main .section5 .app-area{padding: 140px 0; background-image: url('/public/image/static/specialtheater_premium0.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 14px 50%; text-align: center; position: relative; z-index: 10;}
+#main .section5 .app-area::before{content: ''; display: block; clear: both; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 2; background: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.25) 75%, #000 100%);}
+#main .section5 .txt-area, #main .section5 .btn-area{position: relative; z-index: 10;}
+#main .section5 .txt-area span{display: block; font-size: 1.4rem; font-weight: 500; letter-spacing: 12px; line-height: 1;}
+#main .section5 .txt-area strong{display: block; margin-top: 20px; font-size: 3.4rem; font-weight: 600; letter-spacing: -0.5px; line-height: 1;}
+#main .section5 .btn-area{margin-top: 25px; font-size: 0;}
+#main .section5 .btn-area a{display: inline-block; vertical-align: middle; margin-left: 16px; width: 250px; height: 77px; line-height: 77px; background-color: #232323; border-radius: 38.55px; box-sizing: border-box;}
+#main .section5 .btn-area a:first-child{margin-left: 0;}
+#main .section5 .btn-area .app-store img{width: 120px;}
+#main .section5 .btn-area .google-play img{width: 128px;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

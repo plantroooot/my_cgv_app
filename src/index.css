@@ -91,6 +91,22 @@ code {
 /* ==================================================
 	footer
 ================================================== */
+#footer .ad-area{position: relative;}
+#footer .ad-area .img-box a{display: block;}
+#footer .info-area{background-color: #111;}
+#footer .info-area .sitemap ul{display: flex; justify-content: space-between;}
+#footer .info-area .sitemap ul li a{display: block; height: 46px; line-height: 46px; font-size: 13px; font-weight: 400; color: #666;}
+#footer .info-area .sitemap ul li a:hover{text-decoration: underline;}
+#footer .info-area .ft-info{padding:25px 0 40px; box-sizing: border-box; border-top: 1px solid #1d1d1d; font-size:0;}
+#footer .info-area .ft-info .info{margin-top: 10px;}
+#footer .info-area .ft-info .info:first-child{margin-top: 0;}
+#footer .info-area .ft-info p span{display: block; float: left; padding: 0 15px; box-sizing: border-box; font-size: 13px; font-weight: 400; color: #999; position: relative; line-height: 1;}
+#footer .info-area .ft-info p span::before{content: ''; display: block; clear: both; width: 1px; height: 10px; position: absolute; left: 0; top: 50%; margin-top: -5px; background-color: rgba(255, 255, 255, 0.1)}
+#footer .info-area .ft-info p span:first-child{padding-left: 0;}
+#footer .info-area .ft-info p span:first-child::before{display: none;}
+#footer .info-area .ft-info p span em{display: inline-block; margin-right: 8px; color: #666;}
+
+
 
 /* ==================================================
 	skip

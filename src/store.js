@@ -324,6 +324,15 @@ let theater = createSlice({
   ] 
 });
 
+let ftads = createSlice({
+  name : 'ftads',
+  initialState : {
+    title : '우리가 바라던 내차팔기, 헤이딜러',
+    image : '/image/ad/img_ad1.png',
+    link : 'https://www.youtube.com/watch?v=k28qSawg-Nw'
+  }
+});
+
 let loginCheck = createSlice({
   name : 'loginCheck',
   initialState : false
@@ -336,6 +345,7 @@ export default configureStore({
     userInfo : userInfo.reducer,
     event : event.reducer,
     theater : theater.reducer,
+    ftads : ftads.reducer,
     loginCheck : loginCheck.reducer,
   }
 });
