@@ -39,7 +39,7 @@ let movies = createSlice({
       agelimit : "1",
       runningtime : "",
       comedate : "",
-      id : "0",
+      id : "123",
       rsrvrate : 82.1,
       scndstate : 1,
 

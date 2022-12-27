@@ -6,6 +6,7 @@ import axios from 'axios';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import movieData from './../utils/movieData.js';
+import MovieInfo from './../components/MovieInfo.js';
 
 
 function Main(){
@@ -15,6 +16,7 @@ function Main(){
     let dispatch = useDispatch();
     
     let state = useSelector((state) => { return state.movies });
+    
     useEffect(()=>{
         if(pause === ''){
             mainVideo.current.play();
@@ -145,7 +147,7 @@ function SlideForm({type}){
                     return (
                     i < 10 ? //메인 노출 개수
                         <SwiperSlide key={i}>
-                            <div className="box">
+                            {/* <div className="box">
                                 <div className="movie-poster">
                                     <div className="imgs back-img" style={{ backgroundImage : "url('" + val.image + "')" }}>
                                         <img src={"" + val.image } alt={val.title} className="basic-img" />
@@ -165,10 +167,11 @@ function SlideForm({type}){
                                     </div>
                                 </div>                    
                                 <div className="movie-info">
-                                    <strong>{val.title}</strong>
+                                    <strong className="txt-els">{val.title}</strong>
                                     <span>예매율 {val.rsrvrate}%</span>
                                 </div>
-                            </div>
+                            </div> */}
+                            <MovieInfo val={val} i={i} page={"Main"}></MovieInfo>
                         </SwiperSlide>
                     : null
                     )
@@ -201,7 +204,7 @@ function SlideForm({type}){
                                             </div>
                                         </div>                                        
                                         <div className="event-info">
-                                            <strong className="title">{val.title}</strong>
+                                            <strong className="title txt-els">{val.title}</strong>
                                             <span className="date">{val.date}</span>
                                         </div>
                                     </Link>

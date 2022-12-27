@@ -3,16 +3,23 @@ import { createContext, useState } from 'react';
 import { Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
+// pages
 import Main from './pages/Main.js'
+import MovieList from './pages/movie/MovieList.js';
+import MovieView from './pages/movie/MovieView.js';
+
 import gnb from './gnb.json'
 import info from './info.json'
 
 
+
 function App() {
+  let navigate = useNavigate();
   let [loginCheck] = useState(0)
   let state = useSelector((state) => { return state });
   //let [avatar, setAvarta] = useState('/image/img_avatar.png');
   //let dispatch = useDispatch();
+  //let mvInfo = state.movie;
 
   return (
     <div className="App">
@@ -21,9 +28,11 @@ function App() {
         <div className="body-container">
           
           <Routes>
-            <Route path="/" element={<Main></Main>}></Route>
-            {/* <Route path="movies" element={<MovieList></MovieList>}></Route> */}
+            <Route path="/" element={<Main navigate={navigate}></Main>}></Route>
+            {/* ----------------------------------------------------------------- */}
 
+            <Route path="/movies" element={<MovieList navigate={navigate}></MovieList>}></Route>
+            <Route path="/movies/view/:id" element={<MovieView mvinfo={state.movies}></MovieView>}></Route>
             {/* ----------------------------------------------------------------- */}
             <Route path="*" element={<div>존재하지 않는 페이지입니다.</div>}></Route>
           </Routes>
@@ -76,7 +85,7 @@ function Header({state}){
                   pgc.map((rst1, i)=>{
                     return (
                       <li key={i}>
-                        <Link className={`link-menu ${rst1.linkMenu}`}>
+                        <Link className={`link-menu ${rst1.linkMenu}`} to={`${rst1.link}`}>
                             <span>{rst1.name}</span>
                           </Link>
                         <ul className="depth2">

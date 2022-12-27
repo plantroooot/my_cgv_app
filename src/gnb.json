@@ -2,7 +2,7 @@
     {
         "name" : "영화",
         "image" : "",
-        "link" : "",
+        "link" : "/movies",
         "refer1" : "",
         "refer2" : "",
         "linkMenu" : "link-movie",
