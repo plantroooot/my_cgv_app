@@ -4,6 +4,11 @@
 
 .txt-els{display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient: vertical; overflow: hidden;}
 
+.movie-box .movie-info{margin-top: 15px; text-align: center;}
+.movie-box .movie-info strong{height:26px; line-height:26px; font-size: 2rem; font-weight: 700;}
+.movie-box .movie-info .info2{margin-top: 10px; font-size: 0;}
+.movie-box .movie-info span{display: inline-block;; font-size: 1.6rem; font-weight: 500; line-height: 1;}
+
 /* main */
 #main{padding: 0 0 130px; box-sizing: border-box;}
 /* #main .section1 .inner{height:100vh;} */
@@ -47,8 +52,7 @@
 #main .section2 .movie-slide .movie-poster::before{content: ''; display: block; clear: both; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 3; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.07) 35%, rgba(0, 0, 0, 0.6)); background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.07) 35%, rgba(0, 0, 0, 0.6));}
 #main .section2 .movie-slide .movie-poster .level{position: absolute; left: 15px; bottom: -5px; z-index: 5;}
 #main .section2 .movie-slide .movie-poster .level b{display: block; font-size: 6rem; font-style: italic; font-weight: 700; line-height: 1;}
-#main .section2 .movie-slide .movie-poster .agelimit{position: absolute; right: 10px; top: 10px; z-index: 2;}
-#main .section2 .movie-slide .movie-poster .agelimit img{width:25px; height:25px;}
+
 #main .section2 .movie-slide .movie-poster .hover{width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; z-index: 10; background-color: rgba(0, 0, 0, 0.7); font-size: 0; text-align: center; opacity: 0;}
 #main .section2 .movie-slide .movie-poster .hover a{display: inline-block; width: 130px; height: 40px; line-height: 40px; font-size: 1.6rem; font-weight: 500; border-radius: 10px;}
 #main .section2 .movie-slide .movie-poster .hover a:hover{opacity: 0.8;}
@@ -57,10 +61,6 @@
 #main .section2 .movie-slide .movie-poster:hover::before{background-image: none;}
 #main .section2 .movie-slide .movie-poster:hover .level{opacity: 0;}
 #main .section2 .movie-slide .movie-poster:hover .hover{opacity: 1;}
-#main .section2 .movie-slide .movie-info{margin-top: 15px; text-align: center;}
-#main .section2 .movie-slide .movie-info strong{height:26px; line-height:26px; font-size: 2rem; font-weight: 700;}
-#main .section2 .movie-slide .movie-info span{display: block; margin-top:10px; font-size: 1.6rem; font-weight: 500; line-height: 1;}
-
 #main .section3 .title-area .tit-box h3{font-size: 3.2rem;}
 #main .section3 .slide-area .swiper-button-prev, #main .section3 .slide-area .swiper-button-next{top: calc(50% + 5px);}
 #main .section3 .event-slide .event-poster{border-radius: 15px; overflow: hidden;}
@@ -108,9 +108,20 @@
 #sub .section .filter ul li a::before{content: ''; display: block; clear: both; width: 1px; height: 14px; position: absolute; left: 0; top: 50%; margin-top: -7px; background-color: rgba(255, 255, 255, 0.4);}
 #sub .section .filter ul li:first-child a::before{display: none;}
 #sub .section .filter ul li a.on{color: #fff;}
+#sub.movie-idx .section .cont-area{margin-top: 40px;}
 #sub.movie-idx .section1 ol{width: calc(100% + 60px); width: -webkit-calc(100% + 60px); margin-left: -60px; margin-top: -60px;}
 #sub.movie-idx .section1 ol li{float: left; width: calc(25% - 60px); width: -webkit-calc(25% - 60px); margin-left: 60px; margin-top: 60px;}
-
+#sub.movie-idx .section1 .rank-box span{display: block; width: 100%; height: 35px; line-height: 35px; font-size: 1.8rem; font-weight: 600; text-align: center; background-color: #333;}
+#sub.movie-idx .section1 .rank-box.recom span{background-color: #fb4357;}
+#sub.movie-idx .section1 .movie-poster{margin-top: 10px; position: relative;}
+#sub.movie-idx .section1 .movie-poster .agelimit{position: absolute; left: 10px; top: 10px; z-index: 2;}
+#sub.movie-idx .section1 .movie-poster .agelimit img{width:25px; height:25px;}
+/* #sub.movie-idx .section1 ol li .movie-info .info2{text-align: left;} */
+#sub.movie-idx .section1 .movie-info span{display: inline-block; padding: 0 14px; position: relative;}
+#sub.movie-idx .section1 .movie-info span::before{content: ''; display: block; clear: both; width: 1px; height: 12px; position: absolute; left: 0; top: 50%; margin-top: -6px; background-color: rgba(255, 255, 255, 0.4);}
+#sub.movie-idx .section1 .movie-info span:first-child::before{display: none;}
+#sub.movie-idx .section1 .movie-info .btn-box{margin-top: 15px; font-size: 0;}
+#sub.movie-idx .section1 .movie-info .btn-box .rsrv-btn{display: inline-block; width: 100px; height: 30px; line-height: 30px; font-size: 1.4rem; font-weight: 600; background-color: #ff4357; border-radius: 5px;}
 
 
 

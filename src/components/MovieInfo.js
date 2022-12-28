@@ -13,7 +13,7 @@ function MovieInfo({val, i, page}){
         <div className="box movie-box">
             {
                 page == "MovieList" ?                 
-                    <div className="rank-box">
+                    <div className={i < 3 ? 'rank-box recom' : 'rank-box'}>
                         <span>No. {i+1}</span>
                     </div>
                 : null
@@ -25,10 +25,14 @@ function MovieInfo({val, i, page}){
                     onClick={()=>{if(page == "MovieList"){ goViews(); }}}
                 >
                     <img src={"" + val.image } alt={val.title} className="basic-img" />
-                </div>
-                <div className="level" style={{display : 'none'}}>
-                    <b>{i+1}</b>
-                </div>
+                </div>                
+                {
+                    page == "Main" ?                                         
+                    <div className="level">
+                        <b>{i+1}</b>
+                    </div>
+                    : null
+                }
                 <div className="agelimit">
                     { val.agelimit == 0 && <img src="/image/static/age_all.svg" alt="전체이용가" /> }
                     { val.agelimit == 1 && <img src="/image/static/age12.svg" alt="12세이용가" /> }
@@ -45,11 +49,21 @@ function MovieInfo({val, i, page}){
                 }
             </div>                    
             <div className="movie-info">
-                <strong className="txt-els">{val.title}</strong>
-                <span>예매율 {val.rsrvrate}%</span>
+                <strong className="txt-els info1">{val.title}</strong>
+                <div className="info2">
+                    <span>예매율 {val.rsrvrate}%</span>
+                    {
+                    page == "MovieList" ?
+                            <span>{val.release} 개봉</span>            
+                        : null
+                    }
+
+                </div>                
                 {
-                    page == "MovieList" ?                 
-                        <Link to="">예매하기</Link>
+                    page == "MovieList" ?
+                        <div className="btn-box">
+                            <Link to="" className="rsrv-btn">예매하기</Link>
+                        </div>             
                     : null
                 }
             </div>

@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import { sortMovieChart } from './../../store.js';
+import { sortMovieChart, setMovieChart, setReadyMovie } from './../../store.js';
+import movieData from './../../utils/movieData.js';
 import MovieInfo from './../../components/MovieInfo.js';
 
 function MovieList(){
@@ -13,7 +14,9 @@ function MovieList(){
 
     useEffect(() => {
         dispatch(sortMovieChart());
-    })
+    });
+
+    console.log(movieData);
 
     return(
         <div id="sub" className="movie-idx">
@@ -28,10 +31,10 @@ function MovieList(){
                                 <div className="filter">
                                     <ul className="clear">
                                         <li>
-                                            <a href="#!" className={ filter == 0 ? "on" : null } onClick={()=>{ setFilter(0); }}>무비차트</a>
+                                            <a href="#!" className={ filter == 0 ? "on" : null } onClick={()=>{ setFilter(0); dispatch(setMovieChart(movieData)); }}>무비차트</a>
                                         </li>
                                         <li>
-                                            <a href="#!" className={ filter == 1 ? "on" : null } onClick={()=>{ setFilter(1); }}>상영예정작</a>
+                                            <a href="#!" className={ filter == 1 ? "on" : null } onClick={()=>{ setFilter(1); dispatch(setReadyMovie(movieData)); }}>상영예정작</a>
                                         </li>
                                     </ul>
                                 </div>
